@@ -1,0 +1,39 @@
+/* .content {
+  display: flex;
+} */
+
+.right {
+  display: flex;
+}
+.horizontales,
+.verticales {
+  max-width: 400px;
+  margin-right: 12px;
+}
+
+.crucigrama {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 50px;
+}
+
+.crucigrama .row {
+  display: flex;
+}
+
+.crucigrama .cell {
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.crucigrama .cell.blank {
+  opacity: 0;
+}
+
+.crucigrama .cell.key {
+  border-color: transparent;
+}
